@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+header {
+  background-color: aquamarine;
+}
+.content {
+  text-align: left;
+}
+section {
+  background-color: rgb(203, 241, 241);
+  min-height: 100vh;
+}
