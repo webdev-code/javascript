@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal JS</title>
+  </head>
+  <body>
+    <h1>Internal Javascript</h1>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <button class="btn">Internal js</button>
+    <script>
+      document.querySelectorAll(".btn").forEach((item) => {
+        item.addEventListener("click", () => {
+          alert("this is Internal JS");
+        });
+      });
+    </script>
+  </body>
+</html>
