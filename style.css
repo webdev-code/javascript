@@ -7,10 +7,13 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding: 30px;
 }
 header {
   background-color: aquamarine;
+  height: 5rem;
+  padding: 0.5rem;
+  font-size: 2em;
+  text-decoration: underline;
 }
 .content {
   text-align: left;
@@ -18,7 +21,7 @@ header {
 }
 section {
   background-color: rgb(203, 241, 241);
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 10rem);
 }
 a {
   text-decoration: none;
