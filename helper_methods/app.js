@@ -8,5 +8,8 @@ console.log("Hello World Using console.log method");
 let obj = { name: "usa3a" };
 
 alert(obj);
+alert(obj.name);
 document.write(obj);
+document.write(obj.name);
 console.log(obj);
+console.log(obj.name);
