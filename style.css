@@ -18,7 +18,7 @@ header {
 }
 section {
   background-color: rgb(203, 241, 241);
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
 }
 a {
   text-decoration: none;
