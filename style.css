@@ -14,8 +14,18 @@ header {
 }
 .content {
   text-align: left;
+  line-height: 3rem;
 }
 section {
   background-color: rgb(203, 241, 241);
   min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: rgb(83, 4, 4);
+}
+a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: crimson;
 }
