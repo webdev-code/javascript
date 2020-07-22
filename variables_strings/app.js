@@ -3,7 +3,7 @@
 //
 // naming rules
 // naming convention camelCase
-//strings ,string concatination, quotation marks, escape charector \
+//strings ,string concatination ' + ' (implicit type conversion), quotation marks, escape charector \
 
 const firstName = 'usama';
 
