@@ -9,7 +9,7 @@ friends[4] = bestfriend;
 
 console.log(friends);
 
-let secondBestFriend = friends[2];
+let secondBestFriend = friends[1];
 friends[4] = 'anna';
 console.log(friends);
 console.log(friends[4]);

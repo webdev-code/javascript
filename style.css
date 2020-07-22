@@ -22,6 +22,7 @@ header {
 section {
   background-color: rgb(203, 241, 241);
   min-height: calc(100vh - 10rem);
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -36,8 +37,8 @@ ul {
   list-style-type: square;
 }
 .footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   height: 5rem;
   background-color: crimson;
   width: 100vw;
