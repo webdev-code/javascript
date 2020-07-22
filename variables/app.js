@@ -3,7 +3,7 @@
 //
 // naming rules
 // naming convention camelCase
-//strings ,string concatination, quotation marks , backticks and template strings
+//strings ,string concatination, quotation marks, escape charector \
 
 const firstName = 'usama';
 
@@ -29,3 +29,5 @@ const website = 'google';
 const url = 'https://' + website + '.com';
 
 console.log(url);
+
+console.log("usama's age is 24 years old");
