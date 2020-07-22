@@ -21,6 +21,7 @@ const num1 = 54;
 const num2 = 45;
 
 //function with parameters
+//return
 function sum(x, y) {
   // console.log(x + y);
   return x + y;
@@ -32,3 +33,14 @@ console.log(sum(num1, num2));
 const ans = sum(num1, num2);
 console.log(ans);
 console.log('the sum of two numbers is :' + sum(num1, num2));
+
+//function expressions
+// const subt = function sub(x, y) {
+//   return x - y;
+// };
+const subt = function (x, y) {
+  return x - y;
+};
+
+const subtraction = subt(num1, num2);
+console.log(subtraction);
