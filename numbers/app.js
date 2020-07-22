@@ -39,7 +39,7 @@ const lastName = 'mustafa';
 const value = firstName - lastName;
 console.log(value);
 
-//implicit type conversionnum3
+//implicit type conversion
 let number3 = 10;
 let number4 = 23;
 number4 = 'john';
