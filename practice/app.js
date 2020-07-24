@@ -39,4 +39,24 @@ for (let i = 0; i < j; i++) {
 console.log(names);
 console.log(newArray);
 
-//Total
+//Total of an array
+
+const gas = [109, 204, 33, 46];
+const food = [87, 78, 99, 277, 44, 336, 99];
+function totalOfAnArray(arr) {
+  let total = 0;
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    console.log(total);
+    total += arr[i];
+  }
+  if (total > 400) {
+    console.log('too much babe');
+  } else {
+    console.log('keep going');
+  }
+  return total;
+}
+console.log(`the total is: ${totalOfAnArray(gas)}`);
+console.log(`the total is: ${totalOfAnArray(food)}`);
+console.log(`the total is: ${totalOfAnArray([99, 11, 90, 90, 110, 1])}`);
