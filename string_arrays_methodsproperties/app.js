@@ -29,9 +29,11 @@ console.log(names[names.length - 1]); //gives the element at the last index of t
 const lastNames = ['pepper', 'onion', 'banana'];
 const allNames = names.concat(lastNames); // concats the array names with the lastNames array
 console.log(allNames);
-const fullName = names[1].concat(lastNames[1]);
-// concats the first element of names array with the first element of the lastNames array
+const fullName = names[1].concat(lastNames[1]); //without space
+const fullNames = names[1].concat(' ').concat(lastNames[1]); // concats the first element of names array with the first element of the lastNames array (with space)
+
 console.log(fullName);
+console.log(fullNames);
 // reverse
 console.log(allNames.reverse());
 
