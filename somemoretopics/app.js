@@ -14,3 +14,27 @@ let person2 = person;
 person2.name = 'susy';
 console.log(`the name of the first person is ${person.name}`);
 console.log(`the name of the second person is ${person2.name}`);
+
+// truthy and falsey values
+// falsey values : '' , "", ``, 0 , null , undefined , NaN false
+// if something is evaluated to a falsey value it is considered to be false
+// all other values are Truthy values
+
+// null and undefined
+// null is a keyword (representing nothing) ,  we assign the value of null to a variable
+// undefined is a value obtained as result of a javascipt calculation
+
+//ternary operator
+
+// let num1 = null;
+let num1 = undefined;
+let num2 = 5;
+let sum = num1 + num2; //adding null and a number is equal to 0 (null) + 5 = 5
+
+sum ? console.log('Truthy value') : console.log('falsey value'); // if else
+
+sum == 9
+  ? console.log('sum is 9')
+  : sum == 10
+  ? console.log('sum is 10')
+  : console.log('no sum');
