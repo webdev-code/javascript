@@ -51,12 +51,21 @@ function totalOfAnArray(arr) {
     total += arr[i];
   }
   if (total > 400) {
-    console.log('too much babe');
+    // console.log('too much babe');
+    // return total;
+    return ['too much spending ', total];
   } else {
-    console.log('keep going');
+    // console.log('keep going');
+    // return total;
+    return ["it's ok", total];
   }
-  return total;
 }
-console.log(`the total is: ${totalOfAnArray(gas)}`);
-console.log(`the total is: ${totalOfAnArray(food)}`);
-console.log(`the total is: ${totalOfAnArray([99, 11, 90, 90, 110, 1])}`);
+const gasTotal = totalOfAnArray(gas);
+const foodTotal = totalOfAnArray(food);
+const randomTotal = totalOfAnArray([99, 11, 90, 90, 110, 1]);
+
+console.log({
+  gas_total: gasTotal,
+  food_total: foodTotal,
+  random_total: randomTotal,
+});
