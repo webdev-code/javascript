@@ -70,6 +70,7 @@ console.log(ages);
 
 const ageAbove30 = persons.filter(function (person) {
   //   return true;   //returns the complete object with matched condition //copies the whole persons array to ageAbove30
+  //   return false; //returns empty array
   //   return person.age; // copies only the objects with the property of age
   return person.age > 30;
 });
