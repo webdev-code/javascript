@@ -1,4 +1,4 @@
-//function expression // call back function
+//function expression // call back function //higher order functions // citizens
 const sum = function (a = 1, b = 1) {
   return a + b;
 };
