@@ -23,7 +23,7 @@ console.log(idValue2);
 const second1 = first.nextElementSibling; //selecting the next sibling for first
 const setValue = second1.setAttribute('class', 'red'); // setting the value of class attribute
 
-const setValue2 = second.getAttribute('class'); //getting the value of newly defined class attribute
+const setValue2 = second1.getAttribute('class'); //getting the value of newly defined class attribute
 console.log(setValue2);
 
 //className
