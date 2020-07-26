@@ -71,3 +71,29 @@ dynamicContent.appendChild(dynamicText);
 
 const parentDiv = document.querySelector('#example');
 parentDiv.appendChild(dynamicContent);
+
+// insert before
+const pDiv = document.querySelector('#practice'); //select the parent
+const pheading = document.querySelector('#pheading'); //selecting the pheading (before whom we have to insert)
+const dheading = document.createElement('h2'); //creating a new h2
+const dheadingText = document.createTextNode('insert before pheading'); // creating textnode for h2
+dheading.classList.add('red', 'nice');
+dheading.appendChild(dheadingText); // appending text in h2
+
+pDiv.insertBefore(dheading, pheading);
+// parent.insertbefore(new Element , Old element)
+
+// replace Child
+const toBeReplaced = document.querySelector('#toBeReplaced'); // selecting the item which is about to be replaced
+//creating a new element
+const newElement = document.createElement('p');
+const newelementText = document.createTextNode(
+  'lorem lorem lprem askdbiashgjdkbasdb kasbdhka'
+);
+newElement.appendChild(newelementText);
+newElement.classList.add('red');
+
+//replacing newElement with toBeReplaced
+
+pDiv.replaceChild(newElement, toBeReplaced);
+// parent.replacehild(new Element , Old element)
