@@ -25,3 +25,35 @@ const setValue = second1.setAttribute('class', 'red'); // setting the value of c
 
 const setValue2 = second.getAttribute('class'); //getting the value of newly defined class attribute
 console.log(setValue2);
+
+//className
+//  using className we can only get the names of the classes that are active for a certain element , or we can add a class / classes to an element
+//classList
+// add remove class / classes , get list of classes for an element
+
+const para = document.querySelectorAll('p'); //selected para
+// console.log(para);
+//giving nice names to node list
+const firstPara = para[0];
+const secPara = para[1];
+const thirdPara = para[2];
+
+firstPara.className = 'nice'; //adding class nice to the first para
+
+const paraClass = firstPara.className; // assigning the classes of first para to the paraclass variable
+console.log(paraClass);
+
+secPara.className = 'red nice'; //adding multiple classes using className
+
+const paraClass2 = secPara.className; // assigning the classes of second para to the paraclass2 variable
+console.log(paraClass2);
+
+const paraClassList = secPara.classList; //assigning classes list of secpara to paraclasslist
+console.log(paraClass2);
+
+thirdPara.classList.add('red', 'nice'); //adding classes to the third para using classlist add method
+console.log(thirdPara.classList.contains('red')); //checing if the third para contains red class //true
+thirdPara.classList.remove('nice'); //removing class nice from the  third para using classlist remove method
+
+const paraClass3 = thirdPara.classList; //checking the list of classes on the thirdPara
+console.log(paraClass3);
