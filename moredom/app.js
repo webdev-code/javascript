@@ -57,3 +57,17 @@ thirdPara.classList.remove('nice'); //removing class nice from the  third para u
 
 const paraClass3 = thirdPara.classList; //checking the list of classes on the thirdPara
 console.log(paraClass3);
+
+//createElement
+//createTextNode
+//appendChild   //parent.appendChild('child') //appending textNode to the createElement element
+//add any classes before appending to the parent element
+// appendChild // add the element to the parent element
+
+const dynamicContent = document.createElement('h1');
+const dynamicText = document.createTextNode('This is A Dynamic Heading');
+dynamicContent.classList.add('nice', 'red'); //class can be added to dynamic element NOT textnode
+dynamicContent.appendChild(dynamicText);
+
+const parentDiv = document.querySelector('#example');
+parentDiv.appendChild(dynamicContent);
