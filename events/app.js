@@ -2,6 +2,7 @@
 
 const btn = document.querySelector('#btn');
 const btn2 = document.querySelector('#btn2');
+const userInput = document.querySelector('#userInput');
 
 //anonymous function
 btn.addEventListener('click', function (event) {
@@ -17,13 +18,15 @@ function click2(e) {
   e.preventDefault();
   console.log(e);
   console.log(e.type);
-  console.log(e.currentTarget);
-  console.log(e.target);
+  console.log(e.currentTarget); //curretntarget// parentmost element
+  console.log(e.target); //target// childmost element
 }
 //function reference
 btn2.addEventListener('click', click2);
 
 //mouseEvents
+// mosedown => mouseup => mouseclicked
+
 btn.addEventListener('mousedown', function () {
   console.log('mousedown');
 });
@@ -44,14 +47,32 @@ btn.addEventListener('mouseleave', function () {
 });
 
 //keyBoard / key events (not used so far)
-// btn.addEventListener('keydown', function () {
-//   console.log('keydown');
-// });
+// keydown => keypressed => keyup
 
-// btn.addEventListener('keyup', function () {
-//   console.log('keyup');
-// });
+userInput.addEventListener('keypress', function () {
+  console.log('keypressed');
+  console.log(userInput.value);
+});
+userInput.addEventListener('keyup', function () {
+  console.log('keyup');
+});
+userInput.addEventListener('keydown', function () {
+  console.log('keydown');
+});
 
-// btn.addEventListener('keypress', function () {
-//   console.log('keypressed');
-// });
+// currenttarget and target
+// whole point of currentTarget and target is to select the element using currentTarget and target property of the event object
+// currentTarget : the whole element on which the eventlistener is applied // parentmost element
+// target : only that element on which event has been trigerred // childmost element
+
+const dbtn = document.querySelectorAll('.dbtn');
+
+dbtn.forEach(function (dbtn) {
+  dbtn.addEventListener('click', function (e) {
+    // e.currentTarget.style.color = 'blue';
+    // console.log(e.currentTarget);
+
+    e.target.style.color = 'magenta';
+    console.log(e.target);
+  });
+});
