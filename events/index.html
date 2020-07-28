@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More DOM</title>
+    <title>Events</title>
 </head>
 
 <body>
@@ -15,9 +15,18 @@
         <li>anonymous function / function reference</li>
         <li>Mouse Events(mousedown , mouseup , mouseclick , mouseenter , mouseleave)</li>
         <li>key Event(keydown , keyup , keypress)</li>
+        <li>Event Object / contains info about the triggered event</li>
+        <li>event.type</li>
+        <li>event.currentTarget</li>
+        <li>preventDefault()</li>
+        <li>this keyword(not studied yet stick with event object)</li>
     </ul>
     <hr>
-    <div id="parent"></div>
+    <div id="parent">
+        <button id="btn">Click Me</button>
+        <div style="height: 100vh;"></div>
+        <button id="btn2" > <a href="./index.html">Click Me 2</a> </button>
+    </div>
 </body>
 
 <script src="./app.js"></script>
