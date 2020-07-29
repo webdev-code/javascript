@@ -77,24 +77,3 @@ dbtn.forEach(function (dbtn) {
     console.log(e.target);
   });
 });
-//selecting dynamically generated content using e.target
-
-const DCdiv = document.querySelector('#DCdiv');
-
-const dynamicallyCreatedElement = document.createElement('h6');
-
-function DCE() {
-  dynamicallyCreatedElement.innerHTML =
-    '<h6>Selecting and applying addEventListener on Dynamically Created Element Using event.target(event bubbling and propagation)</h6>';
-  dynamicallyCreatedElement.classList.add('DCheading', 'fontsize');
-  DCdiv.prepend(dynamicallyCreatedElement);
-}
-
-const DCbutton = document.querySelector('#DCbutton');
-DCbutton.addEventListener('click', DCE);
-
-DCdiv.addEventListener('click', function (e) {
-  if (e.target.classList.contains('heading')) {
-    console.log('it works');
-  }
-});
