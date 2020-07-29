@@ -65,6 +65,7 @@ userInput.addEventListener('keydown', function () {
 // currentTarget : the whole element on which the eventlistener is applied // parentmost element
 // target : only that element on which event has been trigerred // childmost element
 
+// applying styles on multiple instances of the same class
 const dbtn = document.querySelectorAll('.dbtn');
 
 dbtn.forEach(function (dbtn) {
@@ -75,4 +76,25 @@ dbtn.forEach(function (dbtn) {
     e.target.style.color = 'magenta';
     console.log(e.target);
   });
+});
+//selecting dynamically generated content using e.target
+
+const DCdiv = document.querySelector('#DCdiv');
+
+const dynamicallyCreatedElement = document.createElement('h6');
+
+function DCE() {
+  dynamicallyCreatedElement.innerHTML =
+    '<h6>Selecting and applying addEventListener on Dynamically Created Element Using event.target(event bubbling and propagation)</h6>';
+  dynamicallyCreatedElement.classList.add('DCheading', 'fontsize');
+  DCdiv.prepend(dynamicallyCreatedElement);
+}
+
+const DCbutton = document.querySelector('#DCbutton');
+DCbutton.addEventListener('click', DCE);
+
+DCdiv.addEventListener('click', function (e) {
+  if (e.target.classList.contains('heading')) {
+    console.log('it works');
+  }
 });
