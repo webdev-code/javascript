@@ -10,7 +10,9 @@ btn.addEventListener('click', function () {
 });
 
 container.addEventListener('click', function (e) {
-  //   console.log(e.target);
+  console.log(e.target);
+  console.log(e.currentTarget);
+
   if (e.target.classList.contains('heading')) {
     console.log('it works');
   }
