@@ -1,3 +1,28 @@
+const months = [
+  'january',
+  'feburary',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+];
+
+const days = [
+  'sunday',
+  'monday',
+  'tuesday',
+  'wednessday',
+  'thursday',
+  'friday',
+  'satureday',
+];
+
 let today_date, birthday, val;
 
 const get_today_date = new Date(); //gives the current date and time (device based) / instance of Date Constructor
@@ -67,3 +92,14 @@ console.log(birthday.toDateString());
 
 val = birthday.getTime();
 console.log(val);
+
+//using months and days array
+const new_today = new Date();
+let day = new_today.getDay();
+let month = new_today.getMonth();
+
+console.log(
+  `numerical value of day is : ${day} , numerical value of month is ${month}`
+);
+
+console.log(`the day is ${days[day]} , and the month is ${months[month]}`);
