@@ -8,6 +8,10 @@ const Person = function (firstName, lastName, age, dob, gender) {
   this.heOrSHe;
 };
 
+Person.prototype.programesIn = function () {
+  return `${this.firstName} ${this.lastName} programmes in ${this.language}`;
+};
+
 Person.prototype.heOrSHeF = function () {
   if (this.gender === 'm') {
     this.heOrSHe = 'he';
@@ -18,7 +22,7 @@ Person.prototype.heOrSHeF = function () {
 
 Person.prototype.getSummary = function () {
   this.heOrSHeF();
-  return `Prototypes | Syntactic Sugar |${this.firstName} ${this.lastName} is ${this.age} years old , and ${this.heOrSHe} was born on ${this.dob}`;
+  return `Prototypes | ${this.firstName} ${this.lastName} is ${this.age} years old , and ${this.heOrSHe} was born on ${this.dob}`;
 };
 
 const john = new Person('John', 'bradley', 34, '14 nov 1990', 'm');
